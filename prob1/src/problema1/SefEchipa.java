@@ -3,10 +3,10 @@ package problema1;
 import java.util.ArrayList;
 
 public class SefEchipa extends Angajat{
-	ArrayList<String> Subordonati;
+	ArrayList<Angajat> Subordonati;
 	
-	SefEchipa(int varsta, String nume, String pozitie, ArrayList<String> Angajati){
+	SefEchipa(int varsta, String nume, String pozitie, ArrayList<Angajat> Angajati){
 		super(varsta, nume, pozitie);
-		Subordonati = new ArrayList<String>(Angajati);
+		Subordonati = new ArrayList<Angajat>(Angajati);
 	}
 }
